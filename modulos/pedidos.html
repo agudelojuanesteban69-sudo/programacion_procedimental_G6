@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pedidos</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+  <title>Formulario de Pedido</title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+
+  <style>
+    body {
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .pedido-box {
+      width: 100%;
+      max-width: 500px;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
-    
-<nav>
+<nav class="navbar" role="navigation"
+aria-label="main navegation">
+ <div class="navbar-brand">
+    <a class="navbar-item"><p class="title is-3 is-spaced"></p>
+    </a>
+ </div>  
+
    <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
@@ -20,8 +46,82 @@
       </div>
     </div>
   </div>
-</nav>
-    <h1>Pedidos</h1>
-    <hr>
+</nav>  
+  <div class="pedido-box">
+    <h1 class="title has-text-centered">Formulario de Pedido</h1>
+
+    <form>
+
+      <div class="field">
+        <label class="label">Nombre</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Ingrese su nombre">
+        </div>
+      </div>
+
+      
+      <div class="field">
+        <label class="label">Dirección</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Ingrese su dirección">
+        </div>
+      </div>
+
+      
+      <div class="field">
+        <label class="label">Teléfono</label>
+        <div class="control">
+          <input class="input" type="int" placeholder="Ingrese su teléfono">
+        </div>
+      </div>
+
+      
+      
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input class="input" type="email" placeholder="Ingrese su email">
+        </div>
+      </div>
+
+      
+      
+      <div class="field">
+        <label class="label">Método de Pago</label>
+        <div class="control">
+          <div class="select is-fullwidth">
+            <select>
+              <option>Seleccione una opción</option>
+              <option>Efectivo</option>
+              <option>Tarjeta de Crédito</option>
+              <option>Transferencia Bancaria</option>
+              <option>Nequi</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      
+      
+      <div class="field">
+        <label class="label">Pedido</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Escriba su pedido"></textarea>
+        </div>
+      </div>
+
+      
+      
+      <div class="field">
+        <div class="control">
+          <button class="button is-primary is-fullwidth">
+            Enviar Pedido
+          </button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
 </body>
 </html>
