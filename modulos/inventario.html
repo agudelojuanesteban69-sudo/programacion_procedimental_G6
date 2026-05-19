@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventario</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-    <link rel="stylesheet" href="../css/inventario.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Producto</title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
 </head>
 <body>
-
 <nav class="navbar" role="navigation"
 aria-label="main navegation">
  <div class="navbar-brand">
-    <a class="navbar-item"><p class="title is-3 is-spaced">INVENTARIO</p>
+    <a class="navbar-item"><p class="title is-3 is-spaced">inventario</p>
     </a>
  </div>  
 
@@ -27,125 +27,148 @@ aria-label="main navegation">
       </div>
     </div>
   </div>
-</nav>  
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item">
-                LO MAS RICO
-            </a>
+</nav>
 
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item">
-                        Home
-                    </a>
+<section class="section">
+  <div class="container">
 
-                    <a class="navbar-item">
-                        Documentation
-                    </a>
+    <div class="columns is-centered">
+      <div class="column is-6">
 
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                            More
-                        </a>
+        <div class="box">
 
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item">
-                                About
-                            </a>
-                            <a class="navbar-item is-selected">
-                                Jobs
-                            </a>
-                            <a class="navbar-item">
-                                Contact
-                            </a>
-                            <hr class="navbar-divider">
-                            <a class="navbar-item">
-                                Report an issue
-                            </a>
-                        </div>
-                    </div>
-                </div>
+          <h1 class="title has-text-centered">
+            Registro de Productos
+          </h1>
+
+          <form>
+
+        
+            <div class="field">
+              <label class="label">Código Producto</label>
+              <div class="control">
+                <input 
+                  class="input"
+                  type="text"
+                  name="codigo_producto"
+                  placeholder="Ingrese el código"
+                >
+              </div>
             </div>
-    </nav>
-    <h1>INVENTARIO</h1>
-    <hr>
-    <table class="table">
-  <thead>
-    <tr>
-      <th><abbr title="nom_producto">Nombre del producto</abbr></th>
-      <th><abbr title="cod_producto">Codigo del producto</abbr></th>
-      <th><abbr title="categoria">Categoria</abbr></th>
-      <th><abbr title="prec_unitario">Precio unitario</abbr></th>
-      <th><abbr title="descripcion">Descripcion</abbr></th>
-      <th><abbr title="presentacion">presentacion</abbr></th>
-      <th><abbr title="marca">Marca</abbr></th>
-      <th><abbr title="peso">Peso</abbr></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Postre de tres leches</th>
-      <td>
-        12341231
-      </td>
-      <td>Comida</td>
-      <td>15.000</td>
-      <td>Este postre está compuesto de leche condensada, leche evaporada y crema de leche.</td>
-      <td>coquita de plastico</td>
-      <td>Yo</td>
-      <td>250g</td>
-    </tr>
 
-     <tr>
-      <th>PASTEL DE COCO</th>
-      <td>
-        627266
-      </td>
-      <td>Comida</td>
-      <td>45.000</td>
-      <td>Bizcocho esponjoso con leche de coco, relleno y cubierto con crema y coco rallado.</td>
-      <td>Caja o plato</td>
-      <td>Yo</td>
-      <td>1lb</td>
-    </tr>
-    <tr>
-      <th>POSTRE DE MILO</th>
-      <td>
-        528654
-      </td>
-      <td>Comida</td>
-      <td>15.000</td>
-      <td>Preparado con leche, galletas, leche condensada y chocolate.</td>
-      <td>Caja o plato</td>
-      <td>Yo</td>
-      <td>200g</td>
-    </tr>
-    <tr>
-      <th>POSTRE DE CHOCOLATE</th>
-      <td>
-        94215
-      </td>
-      <td>Comida</td>
-      <td>15.000</td>
-      <td>Postre con leche, chocolate y gelatina o mousse de cacao.</td>
-      <td>Caja o plato</td>
-      <td>Yo</td>
-      <td>200g</td>
-    </tr>
-     <tr>
-      <th>GASEOSA</th>
-      <td>
-        94215
-      </td>
-      <td>Comida</td>
-      <td>8.000</td>
-      <td>Bebida refrescante de tu elección</td>
-      <td>Botella</td>
-      <td>Cocacola</td>
-      <td>2,5L</td>
-    </tr>
-  </tbody>
-</table>
+           
+            <div class="field">
+              <label class="label">Nombre Producto</label>
+              <div class="control">
+                <input 
+                  class="input"
+                  type="text"
+                  name="nombre_producto"
+                  placeholder="Ingrese el nombre"
+                >
+              </div>
+            </div>
+
+           
+            <div class="field">
+              <label class="label">Precio Unidad</label>
+              <div class="control">
+                <input 
+                  class="input"
+                  type="number"
+                  step="0.01"
+                  name="precio_unidad"
+                  placeholder="Ingrese el precio"
+                >
+              </div>
+            </div>
+
+           
+            <div class="field">
+              <label class="label">Cantidad Producto</label>
+              <div class="control">
+                <input 
+                  class="input"
+                  type="number"
+                  name="cantidad_producto"
+                  placeholder="Ingrese la cantidad"
+                >
+              </div>
+            </div>
+
+           
+            <div class="field">
+              <label class="label">Marca Producto</label>
+              <div class="control">
+                <input 
+                  class="input"
+                  type="text"
+                  name="marca_producto"
+                  placeholder="Ingrese la marca"
+                >
+              </div>
+            </div>
+
+           
+            <div class="field">
+              <label class="label">Categoría Producto</label>
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select name="categoria_producto">
+                    <option value="">Seleccione una categoría</option>
+                    <option>Alimentos</option>
+                    <option>Bebidas</option>
+                    <option>Limpieza</option>
+                    <option>Tecnología</option>
+                    <option>Otros</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+           
+            <div class="field">
+              <label class="label">Unidad de Medida</label>
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select name="unidad_medida">
+                    <option value="">Seleccione una unidad</option>
+                    <option>Unidad</option>
+                    <option>Kilogramo</option>
+                    <option>Litro</option>
+                    <option>Caja</option>
+                    <option>Paquete</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="field mt-5">
+              <div class="control">
+                <button class="button is-primary is-fullwidth">
+                  Guardar Producto
+                </button>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
 </body>
 </html>
+
+<!-- git branch -c modigy_module_inventario 
+git switch modigy_module_inventario
+
+primeros dos codigos depues de los estilos
+git status
+git add .
+git commit -m "modigy_module_inventario : Modify form"-->
