@@ -55,7 +55,7 @@ aria-label="main navegation">
       <div class="field">
         <label class="label">Nombre</label>
         <div class="control">
-          <input class="input" type="text" placeholder="Ingrese su nombre">
+          <input class="input" type="text" placeholder="Ingrese su nombre" id="Nombre">
         </div>
       </div>
 
@@ -63,7 +63,7 @@ aria-label="main navegation">
       <div class="field">
         <label class="label">Dirección</label>
         <div class="control">
-          <input class="input" type="text" placeholder="Ingrese su dirección">
+          <input class="input" type="text" placeholder="Ingrese su dirección" id="Dirección" >
         </div>
       </div>
 
@@ -71,7 +71,7 @@ aria-label="main navegation">
       <div class="field">
         <label class="label">Teléfono</label>
         <div class="control">
-          <input class="input" type="int" placeholder="Ingrese su teléfono">
+          <input class="input" type="int" placeholder="Ingrese su teléfono" id="Teléfono">
         </div>
       </div>
 
@@ -80,7 +80,7 @@ aria-label="main navegation">
       <div class="field">
         <label class="label">Email</label>
         <div class="control">
-          <input class="input" type="email" placeholder="Ingrese su email">
+          <input class="input" type="email" placeholder="Ingrese su email" id="Email">
         </div>
       </div>
 
@@ -90,12 +90,12 @@ aria-label="main navegation">
         <label class="label">Método de Pago</label>
         <div class="control">
           <div class="select is-fullwidth">
-            <select>
-              <option>Seleccione una opción</option>
-              <option>Efectivo</option>
-              <option>Tarjeta de Crédito</option>
-              <option>Transferencia Bancaria</option>
-              <option>Nequi</option>
+            <select id="metodo_pago">
+              <option values="Seleccione_opción">Seleccione una opción</option>
+              <option values="Efectivo">Efectivo</option>
+              <option values="Tarjeta_Crédito">Tarjeta de Crédito</option>
+              <option values="Transferencia_Bancaria">Transferencia Bancaria</option>
+              <option values="Nequi">Nequi</option>
             </select>
           </div>
         </div>
@@ -106,7 +106,7 @@ aria-label="main navegation">
       <div class="field">
         <label class="label">Pedido</label>
         <div class="control">
-          <textarea class="textarea" placeholder="Escriba su pedido"></textarea>
+          <textarea class="textarea" placeholder="Escriba su pedido" id="pedidos"></textarea>
         </div>
       </div>
 
@@ -122,6 +122,6 @@ aria-label="main navegation">
 
     </form>
   </div>
-
+<script src="../js/pedidos.js"></script>
 </body>
 </html>

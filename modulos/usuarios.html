@@ -39,7 +39,7 @@ aria-label="main navegation">
           <div class="field">
             <label class="label">Nombre</label>
             <div class="control">
-              <input class="input" type="text" placeholder="Nombre completo">
+              <input class="input" type="text" placeholder="Nombre completo" id="Nombre">
             </div>
           </div>
 
@@ -47,7 +47,7 @@ aria-label="main navegation">
           <div class="field">
             <label class="label">contraseña</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-success" type="text" placeholder="Usuario" >
+              <input class="input is-success" type="text" placeholder="Usuario" id="contraseña" >
               <span class="icon is-small is-left">
                 <i class="fas fa-user"></i>
               </span>
@@ -62,7 +62,7 @@ aria-label="main navegation">
           <div class="field">
             <label class="label">Email</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-danger" type="email" placeholder="Email" >
+              <input class="input is-danger" type="email" placeholder="Email" id="Email" >
               <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
@@ -77,15 +77,15 @@ aria-label="main navegation">
           <div class="field">
             <label class="label">Número de celular</label>
             <div class="control">
-              <input class="input" type="tel" placeholder="  ingrese su celular">
+              <input class="input" type="tel" placeholder="  ingrese su celular" id="Número_celular">
             </div>
           </div>
 
-          <!-- Fecha de nacimiento -->
+          
           <div class="field">
             <label class="label">Fecha de nacimiento</label>
             <div class="control">
-              <input class="input" type="date">
+              <input class="input" type="date" id="fecha_nacimiento">
             </div>
           </div>
 
@@ -93,20 +93,20 @@ aria-label="main navegation">
           <div class="field">
             <label class="label">Dirección</label>
             <div class="control">
-              <input class="input" type="text" placeholder=" ingrese su direccion">
+              <input class="input" type="text" placeholder=" ingrese su direccion" id="Dirección">
             </div>
           </div>
 
-          <!-- Género -->
+         
           <div class="field">
             <label class="label">Género</label>
             <div class="control">
               <div class="select">
-                <select>
-                  <option>Masculino</option>
-                  <option>Femenino</option>
-                  <option>Otro</option>
-                  <option>Prefiero no decirlo</option>
+                <select id="genero">
+                  <option value="Masculino">Masculino</option>
+                  <option value="Femenino">Femenino</option>
+                  <option value="Otro">Otro</option>
+                  <option value="Prefiero_decirlo">Prefiero no decirlo</option>
                 </select>
               </div>
             </div>
@@ -116,7 +116,7 @@ aria-label="main navegation">
           <div class="field">
             <div class="control">
               <label class="checkbox">
-                <input type="checkbox">
+                <input type="checkbox" id="acepto">
                 Acepto los <a href="#">términos y condiciones</a>
               </label>
             </div>
@@ -126,11 +126,11 @@ aria-label="main navegation">
           <div class="field">
             <div class="control">
               <label class="radio">
-                <input type="radio" name="question">
+                <input type="radio" name="laptop">
                 Yes
               </label>
               <label class="radio">
-                <input type="radio" name="question">
+                <input type="radio" name="laptop">
                 No
               </label>
             </div>
@@ -150,5 +150,6 @@ aria-label="main navegation">
       </div>
     </div>
   </section>
+<script src="../js/usuarios.js"></script>
 </body>
 </html>

@@ -52,6 +52,7 @@ aria-label="main navegation">
                   type="text"
                   name="codigo_producto"
                   placeholder="Ingrese el código"
+                  id="codigo_producto"
                 >
               </div>
             </div>
@@ -65,6 +66,7 @@ aria-label="main navegation">
                   type="text"
                   name="nombre_producto"
                   placeholder="Ingrese el nombre"
+                  id="nombre_producto"
                 >
               </div>
             </div>
@@ -79,6 +81,7 @@ aria-label="main navegation">
                   step="0.01"
                   name="precio_unidad"
                   placeholder="Ingrese el precio"
+                  id="precio_unidad"
                 >
               </div>
             </div>
@@ -92,6 +95,7 @@ aria-label="main navegation">
                   type="number"
                   name="cantidad_producto"
                   placeholder="Ingrese la cantidad"
+                  id="cantidad_producto"
                 >
               </div>
             </div>
@@ -105,6 +109,7 @@ aria-label="main navegation">
                   type="text"
                   name="marca_producto"
                   placeholder="Ingrese la marca"
+                  id="marca_producto"
                 >
               </div>
             </div>
@@ -114,13 +119,13 @@ aria-label="main navegation">
               <label class="label">Categoría Producto</label>
               <div class="control">
                 <div class="select is-fullwidth">
-                  <select name="categoria_producto">
-                    <option value="">Seleccione una categoría</option>
-                    <option>Alimentos</option>
-                    <option>Bebidas</option>
-                    <option>Limpieza</option>
-                    <option>Tecnología</option>
-                    <option>Otros</option>
+                  <select name="categoria_producto" id="categoria_producto">
+                    <option value="seleccion_categoria">Seleccione una categoría</option>
+                    <option value="alimento">Alimentos</option>
+                    <option value="bebida">Bebidas</option>
+                    <option value="Limpieza">Limpieza</option>
+                    <option value="tecnologia">Tecnología</option>
+                    <option value="otros">Otros</option>
                   </select>
                 </div>
               </div>
@@ -131,13 +136,13 @@ aria-label="main navegation">
               <label class="label">Unidad de Medida</label>
               <div class="control">
                 <div class="select is-fullwidth">
-                  <select name="unidad_medida">
-                    <option value="">Seleccione una unidad</option>
-                    <option>Unidad</option>
-                    <option>Kilogramo</option>
-                    <option>Litro</option>
-                    <option>Caja</option>
-                    <option>Paquete</option>
+                  <select name="unidad_medida" id="Unidad_Medida">
+                    <option value="Seleccione_unidad">Seleccione una unidad</option>
+                    <option value="Unidad">Unidad</option>
+                    <option value="Kilogramo">Kilogramo</option>
+                    <option value="Litro">Litro</option>
+                    <option value="Caja">Caja</option>
+                    <option value="Paquete">Paquete</option>
                   </select>
                 </div>
               </div>
@@ -161,7 +166,7 @@ aria-label="main navegation">
 
   </div>
 </section>
-
+<script src="../js/inventario.js"></script>
 </body>
 </html>
 
