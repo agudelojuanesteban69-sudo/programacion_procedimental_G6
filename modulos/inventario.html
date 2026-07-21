@@ -1,173 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario de Producto</title>
 
-  
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
 </head>
-<body>
-<nav class="navbar" role="navigation"aria-label="main navegation">
- <div class="navbar-brand">
-    <a class="navbar-item"><p class="title is-3 is-spaced">inventario</p>
-    </a>
- </div>  
 
-   <div class="navbar-end">
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navegation">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <p class="title is-3 is-spaced">inventario</p>
+      </a>
+    </div>
+
+    <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-primary"href="../index.html">
+          <a class="button is-primary" href="../index.html">
             <strong>home</strong>
           </a>
-         
+
         </div>
       </div>
     </div>
-  </div>
-</nav>
+    </div>
+  </nav>
 
-<section class="section">
-  <div class="container">
+  <section class="section">
+    <div class="container">
 
-    <div class="columns is-centered">
-      <div class="column is-6">
+      <div class="columns is-centered">
+        <div class="column is-6">
 
-        <div class="box">
+          <div class="box">
 
-          <h1 class="title has-text-centered">
-            Registro de Productos
-          </h1>
+            <h1 class="title has-text-centered">
+              Registro de Productos
+            </h1>
 
-          <div>
+            <div>
 
-        
-            <div class="field">
-              <label class="label">Código Producto</label>
-              <div class="control">
-                <input 
-                  class="input"
-                  type="text"
-                  name="codigo_producto"
-                  placeholder="Ingrese el código"
-                  id="codigo_producto"
-                >
-              </div>
-            </div>
 
-           
-            <div class="field">
-              <label class="label">Nombre Producto</label>
-              <div class="control">
-                <input 
-                  class="input"
-                  type="text"
-                  name="nombre_producto"
-                  placeholder="Ingrese el nombre"
-                  id="nombre_producto"
-                >
-              </div>
-            </div>
-
-           
-            <div class="field">
-              <label class="label">Precio Unidad</label>
-              <div class="control">
-                <input 
-                  class="input"
-                  type="number"
-                  step="0.01"
-                  name="precio_unidad"
-                  placeholder="Ingrese el precio"
-                  id="precio_unidad"
-                >
-              </div>
-            </div>
-
-           
-            <div class="field">
-              <label class="label">Cantidad Producto</label>
-              <div class="control">
-                <input 
-                  class="input"
-                  type="number"
-                  name="cantidad_producto"
-                  placeholder="Ingrese la cantidad"
-                  id="cantidad_producto"
-                >
-              </div>
-            </div>
-
-           
-            <div class="field">
-              <label class="label">Marca Producto</label>
-              <div class="control">
-                <input 
-                  class="input"
-                  type="text"
-                  name="marca_producto"
-                  placeholder="Ingrese la marca"
-                  id="marca_producto"
-                >
-              </div>
-            </div>
-
-           
-            <div class="field">
-              <label class="label">Categoría Producto</label>
-              <div class="control">
-                <div class="select is-fullwidth">
-                  <select name="categoria_producto" id="categoria_producto">
-                    <option value="seleccion_categoria">Seleccione una categoría</option>
-                    <option value="alimento">Alimentos</option>
-                    <option value="bebida">Bebidas</option>
-                    <option value="Limpieza">Limpieza</option>
-                    <option value="tecnologia">Tecnología</option>
-                    <option value="otros">Otros</option>
-                  </select>
+              <div class="field">
+                <label class="label">Código Producto</label>
+                <div class="control">
+                  <input class="input" type="text" name="codigo_producto" placeholder="Ingrese el código"
+                    id="codigo_producto">
                 </div>
               </div>
-            </div>
 
-           
-            <div class="field">
-              <label class="label">Unidad de Medida</label>
-              <div class="control">
-                <div class="select is-fullwidth">
-                  <select name="unidad_medida" id="Unidad_Medida">
-                    <option value="Seleccione_unidad">Seleccione una unidad</option>
-                    <option value="Unidad">Unidad</option>
-                    <option value="Kilogramo">Kilogramo</option>
-                    <option value="Litro">Litro</option>
-                    <option value="Caja">Caja</option>
-                    <option value="Paquete">Paquete</option>
-                  </select>
+
+              <div class="field">
+                <label class="label">Nombre Producto</label>
+                <div class="control">
+                  <input class="input" type="text" name="nombre_producto" placeholder="Ingrese el nombre"
+                    id="nombre_producto">
                 </div>
               </div>
-            </div>
 
-            
-            <div class="field mt-5">
-              <div class="control">
-                <button class="button is-primary is-fullwidth" id="btnGuardar">
-                  Guardar Producto
-                </button>
+
+              <div class="field">
+                <label class="label">Precio Unidad</label>
+                <div class="control">
+                  <input class="input" type="number" step="0.01" name="precio_unidad" placeholder="Ingrese el precio"
+                    id="precio_unidad">
+                </div>
               </div>
+
+
+              <div class="field">
+                <label class="label">Cantidad Producto</label>
+                <div class="control">
+                  <input class="input" type="number" name="cantidad_producto" placeholder="Ingrese la cantidad"
+                    id="cantidad_producto">
+                </div>
+              </div>
+
+
+              <div class="field">
+                <label class="label">Marca Producto</label>
+                <div class="control">
+                  <input class="input" type="text" name="marca_producto" placeholder="Ingrese la marca"
+                    id="marca_producto">
+                </div>
+              </div>
+
+
+              <div class="field">
+                <label class="label">Categoría Producto</label>
+                <div class="control">
+                  <div class="select is-fullwidth">
+                    <select name="categoria_producto" id="categoria_producto">
+                      <option value="seleccion_categoria">Seleccione una categoría</option>
+                      <option value="alimento">Alimentos</option>
+                      <option value="bebida">Bebidas</option>
+                      <option value="Limpieza">Limpieza</option>
+                      <option value="tecnologia">Tecnología</option>
+                      <option value="otros">Otros</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="field">
+                <label class="label">Unidad de Medida</label>
+                <div class="control">
+                  <div class="select is-fullwidth">
+                    <select name="unidad_medida" id="Unidad_Medida">
+                      <option value="Seleccione_unidad">Seleccione una unidad</option>
+                      <option value="Unidad">Unidad</option>
+                      <option value="Kilogramo">Kilogramo</option>
+                      <option value="Litro">Litro</option>
+                      <option value="Caja">Caja</option>
+                      <option value="Paquete">Paquete</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="field mt-5">
+                <div class="control">
+                  <button class="button is-primary is-fullwidth" id="btnGuardar">
+                    Guardar Producto
+                  </button>
+                </div>
+              </div>
+
             </div>
 
           </div>
 
         </div>
-
       </div>
-    </div>
 
-  </div>
-</section>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="../js/inventario.js"></script>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../js/inventario.js"></script>
 </body>
+
 </html>
 
 <!-- git branch -c modigy_module_inventario 

@@ -6,85 +6,62 @@ function ValidarInformacion() {
     let metodo_pago = document.getElementById("metodo_pago").value;
     let pedidos = document.getElementById("pedidos").value;
 
-
-    if (!Nombre || !Dirección || !Teléfono || !Email || !metodo_pago || !pedidos ) {
+    if (!Nombre || !Dirección || !Teléfono || !Email || !metodo_pago || !pedidos) {
         Swal.fire({
             position: "top-end",
             icon: "error",
-            title: "Campos Incompletos",
+            title: "Campos incompletos",
             showConfirmButton: false,
             timer: 1500
         });
-    }
-
-     else {
+    } else {
         console.log(
-            `Informacion del pedido: \n
+            `Información del pedido: \n
             ${Nombre} \n
             ${Dirección} \n
             ${Teléfono} \n
             ${Email} \n
             ${metodo_pago} \n
             ${pedidos}`
-
         );
 
-
-    
-         if (!/^[a-zA-Z]+$/.test(Nombre)) {
-            console.log("nombre debe contener letras")
+        if (!/^[a-zA-Z]+$/.test(Nombre)) {
+            console.log("El nombre debe contener letras");
             Swal.fire({
-                title: "nombre  debe contener letras",
+                title: "El nombre debe contener letras",
                 icon: "error"
             });
             return;
         }
-
-
-
 
         if (!/^\d+$/.test(Teléfono)) {
-            console.log("telefono debe contener numeros")
+            console.log("El teléfono debe contener números");
             Swal.fire({
-                title: "telefono  debe contener numero",
+                title: "El teléfono debe contener números",
                 icon: "error"
             });
             return;
         }
-
-
 
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(Email)) {
-            console.log("email debe contener email")
+            console.log("El correo electrónico debe ser válido");
             Swal.fire({
-                title: "email  debe contener email",
+                title: "El correo electrónico debe ser válido",
                 icon: "error"
             });
             return;
         }
 
 
-
-        if (!/^[a-zA-Z]+$/.test(metodo_pago)) {
-            console.log("metodo de pago debe contener letras")
-            Swal.fire({
-                title: "metodo de pago  debe contener letras",
-                icon: "error"
-            });
-            return;
-        }
-
-
-
-
-                 Swal.fire({
+        Swal.fire({
             position: "top-end",
             icon: "success",
-            title: "Informacion Guardada Correctamente",
+            title: "Información guardada correctamente",
             showConfirmButton: false,
             timer: 1500
         });
     }
 }
+
 
 document.getElementById("btnGuardar").onclick = ValidarInformacion;

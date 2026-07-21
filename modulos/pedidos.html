@@ -1,53 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario de Pedido</title>
 
-  
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+  <link rel="stylesheet" href="/css/pedidos.css">
 
-  <style>
-    body {
-      background: #f5f5f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .pedido-box {
-      width: 100%;
-      max-width: 500px;
-      padding: 30px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-  </style>
 </head>
-<body>
-<nav class="navbar" role="navigation"
-aria-label="main navegation">
- <div class="navbar-brand">
-    <a class="navbar-item"><p class="title is-3 is-spaced"></p>
-    </a>
- </div>  
 
-   <div class="navbar-end">
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navegation">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <p class="title is-3 is-spaced">PEDIDOS</p>
+      </a>
+    </div>
+
+    <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-primary"href="../index.html">
+          <a class="button is-primary" href="../index.html">
             <strong>home</strong>
           </a>
-         
         </div>
       </div>
     </div>
-  </div>
-</nav>  
-  <div class="pedido-box">
+  </nav>
+  <div class="container">
+
+
     <h1 class="title has-text-centered">Formulario de Pedido</h1>
 
     <div>
@@ -59,15 +44,15 @@ aria-label="main navegation">
         </div>
       </div>
 
-      
+
       <div class="field">
         <label class="label">Dirección</label>
         <div class="control">
-          <input class="input" type="text" placeholder="Ingrese su dirección" id="Dirección" >
+          <input class="input" type="text" placeholder="Ingrese su dirección" id="Dirección">
         </div>
       </div>
 
-      
+
       <div class="field">
         <label class="label">Teléfono</label>
         <div class="control">
@@ -75,8 +60,8 @@ aria-label="main navegation">
         </div>
       </div>
 
-      
-      
+
+
       <div class="field">
         <label class="label">Email</label>
         <div class="control">
@@ -84,8 +69,8 @@ aria-label="main navegation">
         </div>
       </div>
 
-      
-      
+
+
       <div class="field">
         <label class="label">Método de Pago</label>
         <div class="control">
@@ -101,8 +86,8 @@ aria-label="main navegation">
         </div>
       </div>
 
-      
-      
+
+
       <div class="field">
         <label class="label">Pedido</label>
         <div class="control">
@@ -110,8 +95,8 @@ aria-label="main navegation">
         </div>
       </div>
 
-      
-      
+
+
       <div class="field">
         <div class="control">
           <button class="button is-primary is-fullwidth" id="btnGuardar">
@@ -122,7 +107,8 @@ aria-label="main navegation">
 
     </div>
   </div>
- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="../js/pedidos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../js/pedidos.js"></script>
 </body>
+
 </html>

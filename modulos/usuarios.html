@@ -1,136 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Usuarios</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 </head>
-<body>
-<nav>
-<nav class="navbar" role="navigation"
-aria-label="main navegation">
- <div class="navbar-brand">
-    <a class="navbar-item"><p class="title is-3 is-spaced">USUARIO</p>
-    </a>
- </div>  
 
-   <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary"href="../index.html">
-            <strong>home</strong>
-          </a>
-         
+<body>
+  <nav>
+    <nav class="navbar" role="navigation" aria-label="main navegation">
+      <div class="navbar-brand">
+        <a class="navbar-item">
+          <p class="title is-3 is-spaced">USUARIO</p>
+        </a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary" href="../index.html">
+              <strong>home</strong>
+            </a>
+
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</nav>
-  <section class="section">
-    <div class="container">
-      <h1 class="title has-text-centered">USUARIOS</h1>
-      <hr>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <h1 class="title has-text-centered">USUARIOS</h1>
+        <hr>
 
-      <div class="columns is-centered">
-        <div class="column is-half">
+        <div class="columns is-centered">
+          <div class="column is-half">
 
 
-          <div class="field">
-            <label class="label">Nombre</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Nombre completo" id="Nombre">
-            </div>
-          </div>
-
-         
-          <div class="field">
-            <label class="label">contraseña</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input is-success" type="text" placeholder="Usuario" id="contrasena" >
-              <span class="icon is-small is-left">
-                <i class="fas fa-user"></i>
-              </span>
-              <span class="icon is-small is-right">
-                <i class="fas fa-check"></i>
-              </span>
-            </div>
-            <p class="help is-success">This username is available</p>
-          </div>
-
-          
-          <div class="field">
-            <label class="label">Email</label>
-            <div class="control has-icons-left has-icons-right">
-              <input class="input is-danger" type="email" placeholder="Email" id="Email" >
-              <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-              </span>
-              <span class="icon is-small is-right">
-                <i class="fas fa-exclamation-triangle"></i>
-              </span>
-            </div>
-            <p class="help is-danger">This email is invalid</p>
-          </div>
-
-          
-          <div class="field">
-            <label class="label">Número de celular</label>
-            <div class="control">
-              <input class="input" type="tel" placeholder="  ingrese su celular" id="Número_celular">
-            </div>
-          </div>
-
-          
-          <div class="field">
-            <label class="label">Fecha de nacimiento</label>
-            <div class="control">
-              <input class="input" type="date" id="fecha_nacimiento">
-            </div>
-          </div>
-
-         
-          <div class="field">
-            <label class="label">Dirección</label>
-            <div class="control">
-              <input class="input" type="text" placeholder=" ingrese su direccion" id="Dirección">
-            </div>
-          </div>
-
-         
-          <div class="field">
-            <label class="label">Género</label>
-            <div class="control">
-              <div class="select">
-                <select id="genero">
-                  <option value="Masculino">Masculino</option>
-                  <option value="Femenino">Femenino</option>
-                  <option value="Otro">Otro</option>
-                  <option value="Prefiero_decirlo">Prefiero no decirlo</option>
-                </select>
+            <div class="field">
+              <label class="label">Nombre</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Nombre completo" id="Nombre">
               </div>
             </div>
-          </div>
-
-        
 
 
-        
-          <div class="field is-grouped is-grouped-centered">
-            <div class="control">
-              <button class="button is-link" id="btnGuardar">aceptar</button>
+            <div class="field">
+              <label class="label">contraseña</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="contraseña" id="contrasena">
+              </div>
             </div>
-            <div class="control">
-              <button class="button is-link is-light">Cancela</button>
-            </div>
-          </div>
 
+
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input class="input" type="email" placeholder="Email" id="Email">
+              </div>
+            </div>
+
+
+            <div class="field">
+              <label class="label">Número de celular</label>
+              <div class="control">
+                <input class="input" type="tel" placeholder="  ingrese su celular" id="Número_celular">
+              </div>
+            </div>
+
+
+            <div class="field">
+              <label class="label">Fecha de nacimiento</label>
+              <div class="control">
+                <input class="input" type="date" id="fecha_nacimiento">
+              </div>
+            </div>
+
+
+            <div class="field">
+              <label class="label">Dirección</label>
+              <div class="control">
+                <input class="input" type="text" placeholder=" ingrese su direccion" id="Dirección">
+              </div>
+            </div>
+
+
+            <div class="field">
+              <label class="label">Género</label>
+              <div class="control">
+                <div class="select">
+                  <select id="genero">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                    <option value="Prefiero_decirlo">Prefiero no decirlo</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+            <div class="field is-grouped is-grouped-centered">
+              <div class="control">
+                <button class="button is-link" id="btnGuardar">aceptar</button>
+              </div>
+              <div class="control">
+                <button class="button is-link is-light">Cancela</button>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="../js/usuarios.js"></script>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/usuarios.js"></script>
 </body>
-</html>
 
+</html>

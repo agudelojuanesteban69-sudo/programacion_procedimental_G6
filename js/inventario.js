@@ -7,20 +7,18 @@ function ValidarInformacion() {
     let categoria_producto = document.getElementById("categoria_producto").value;
     let Unidad_Medida = document.getElementById("Unidad_Medida").value;
 
-
     if (!codigo_producto || !nombre_producto || !precio_unidad || !cantidad_producto || !marca_producto || !categoria_producto || !Unidad_Medida) {
         Swal.fire({
             position: "top-end",
             icon: "error",
-            title: "Campos Incompletos",
+            title: "Campos incompletos",
             showConfirmButton: false,
             timer: 1500
         });
     }
-
-     else {
+    else {
         console.log(
-            `Informacion del Producto: \n
+            `Información del producto: \n
             ${codigo_producto} \n
             ${nombre_producto} \n
             ${precio_unidad} \n
@@ -30,20 +28,18 @@ function ValidarInformacion() {
             ${Unidad_Medida}`
         );
 
-
-         if (!/^[a-zA-Z]+$/.test(nombre_producto)) {
-            console.log("nombre del producto debe contener letras")
+        if (!/^\d+$/.test(codigo_producto)) {
             Swal.fire({
-                title: "nombre del producto debe contener letras",
+                title: "Código del producto debe contener números",
                 icon: "error"
             });
             return;
         }
 
-
-        if (!/^\d+$/.test(codigo_producto)) {
+        if (!/^[a-zA-Z]+$/.test(nombre_producto)) {
+            console.log("Nombre del producto debe contener letras");
             Swal.fire({
-                 title: "Codigo del producto debe contener números",
+                title: "Nombre del producto debe contener letras",
                 icon: "error"
             });
             return;
@@ -51,54 +47,46 @@ function ValidarInformacion() {
 
         if (!/^\d+$/.test(precio_unidad)) {
             Swal.fire({
-                 title: "precio de unidad  debe contener números",
+                title: "Precio de unidad debe contener números",
                 icon: "error"
             });
             return;
         }
-
-        
 
         if (!/^\d+$/.test(cantidad_producto)) {
             Swal.fire({
-                 title: "cantidad de unidad   debe contener números",
+                title: "Cantidad de unidades debe contener números",
                 icon: "error"
             });
             return;
         }
-
-
 
         if (!/^[a-zA-Z]+$/.test(categoria_producto)) {
-            console.log("categoria del producto debe contener letras")
+            console.log("Categoría del producto debe contener letras");
             Swal.fire({
-                title: "categoria del producto debe contener letras",
+                title: "Categoría del producto debe contener letras",
                 icon: "error"
             });
             return;
         }
-
 
         if (!/^[a-zA-Z]+$/.test(Unidad_Medida)) {
-            console.log("Unidad de Medida debe contener letras")
+            console.log("Unidad de medida debe contener letras");
             Swal.fire({
-                title: "Unidad de Medida debe contener letras",
+                title: "Unidad de medida debe contener letras",
                 icon: "error"
             });
             return;
         }
-    
 
-
-         Swal.fire({
+        Swal.fire({
             position: "top-end",
             icon: "success",
-            title: "Informacion Guardada Correctamente",
+            title: "Información guardada correctamente",
             showConfirmButton: false,
             timer: 1500
         });
     }
 }
-
 
 document.getElementById("btnGuardar").onclick = ValidarInformacion;
